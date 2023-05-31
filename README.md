@@ -1,6 +1,8 @@
 # tomato_diseases
 
-This is an AI
+This is an AI project that detects the typeof disease a tomatoe has and profers solutions to the cure or prevention. This is by using an Android phone with camera to snap the tomato leave. Automatically the system predicts if the plant is healthy or not.
+
+Visit https://tomtoesdiseases.indexcracktools.com/ to download app  
 
 ## Getting Started
 
