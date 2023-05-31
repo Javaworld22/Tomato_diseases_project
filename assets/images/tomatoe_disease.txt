@@ -1,0 +1,10 @@
+1 Tomato_late_blight
+2 Tomato_healthy
+3 Tomato_early_blight
+4 Tomato_septorial_leaf_spot
+5 Tomato_yellow_leaf_curl_virus
+6 Tomato_bacterial_spot
+7 Tomato_target_spot
+8 Tomato_mosaic_virus
+9 Tomato_leaf_mold
+10 Tomato_spider_mite
