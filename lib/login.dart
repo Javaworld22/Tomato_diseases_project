@@ -205,15 +205,19 @@ class Login extends StatefulWidget {
               child: SizedBox(
                 width: 327,
                 height: 50,
-                child: FlatButton(
-                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.all(16.0),
+                    textStyle: const TextStyle(fontSize: 20),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    backgroundColor: (passwordController.value.text.length > 2) ? const Color.fromRGBO(
+                        1, 66, 150, 1) : const Color.fromRGBO(196, 196, 196, 1),
                   ),
                   child: const Text('Continue',
-                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600),),
-                  color: (passwordController.value.text.length > 2) ? const Color.fromRGBO(
-                      1, 66, 150, 1) : const Color.fromRGBO(196, 196, 196, 1),
-                  textColor: Colors.white,
+                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600,color: Colors.white,),),
                   onPressed: () {
                     setState(() {
                       print('value here is ${emailController.value.text}');
@@ -393,16 +397,20 @@ class _Button extends State<Button> {
          return  SizedBox(
             width: 327,
             height: 50,
-            child: FlatButton(
+            child: TextButton(
               key: _refreshIndicatorKey,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.all(16.0),
+                textStyle: const TextStyle(fontSize: 20),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                backgroundColor: (popup.value.length > 2) ? const Color.fromRGBO(
+                    1, 66, 150, 1) : const Color.fromRGBO(196, 196, 196, 1),
               ),
               child: const Text('Continue',
-                style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600),),
-              color: (popup.value.length > 2) ? const Color.fromRGBO(
-                  1, 66, 150, 1) : const Color.fromRGBO(196, 196, 196, 1),
-              textColor: Colors.white,
+                style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600, color: Colors.white),),
               onPressed: () {
                 setState(() {
                   popup.value = widget.process;
@@ -425,10 +433,16 @@ class RegisterGoogle extends StatelessWidget {
     return SizedBox(
       width: 327,
       height: 50,
-      child: FlatButton(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          side: const BorderSide(width: 1, style: BorderStyle.solid, color: Color.fromRGBO(223, 222, 228,1)),
+      child: TextButton(
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.white,
+          padding: const EdgeInsets.all(16.0),
+          textStyle: const TextStyle(fontSize: 20),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            side: const BorderSide(width: 1, style: BorderStyle.solid, color: Color.fromRGBO(223, 222, 228,1)),
+          ),
+          backgroundColor: const Color.fromRGBO(1, 66, 150, 1),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -443,7 +457,7 @@ class RegisterGoogle extends StatelessWidget {
             ),
           ],
         ),
-        textColor: Colors.blue,
+        //textColor: Colors.blue,
         onPressed: () {},
       ),
     );

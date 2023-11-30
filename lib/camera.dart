@@ -130,7 +130,7 @@ class PreviewPage extends StatelessWidget {
           Image.file(File(picture.path), fit: BoxFit.cover, width: 250),
           const SizedBox(height: 24),
           Text(picture.name),
-          RaisedButton(
+          ElevatedButton(
               onPressed: ()async{
                 Navigator.push(
                     context,

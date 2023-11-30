@@ -166,7 +166,7 @@ class _Detect extends State<Detect>{
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-      RaisedButton(
+          ElevatedButton(
           onPressed: (){
             selectImage();
           },
@@ -174,7 +174,7 @@ class _Detect extends State<Detect>{
       ),
           SizedBox(width: 15,),
 
-          RaisedButton(
+          ElevatedButton(
               onPressed: ()async{
                 await availableCameras().then((value) => Navigator.push(context,
                     MaterialPageRoute(builder: (_) => CameraPage(cameras: value))));
@@ -277,7 +277,7 @@ class _Detect extends State<Detect>{
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  FlatButton(
+                  TextButton(
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -297,7 +297,9 @@ class _Detect extends State<Detect>{
                       ],
                     ),
                     onPressed: () {},
-                    color: const Color.fromRGBO(250, 250, 250, 1),
+                    style: TextButton.styleFrom(
+                      foregroundColor: const Color.fromRGBO(250, 250, 250, 1),
+                    ),
                   ),
 
                   // FlatButton(
